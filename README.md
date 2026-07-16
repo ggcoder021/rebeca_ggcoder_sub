@@ -1,5 +1,6 @@
-# Aurora Subscription Template
+# MMD Subscription Template
 
+#تلگرام : https://t.me/bang_code
 یک قالب ساده، سریع و مدرن برای نمایش اطلاعات اشتراک و کانفیگ‌ها در **Rebecca**.
 
 طراحی شده و بازطراحی‌شده توسط **@GGCODER_IR**
