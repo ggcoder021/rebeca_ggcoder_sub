@@ -1,111 +1,99 @@
-# Aurora — Simple Subscription Page
+# Aurora Subscription Template
 
-A simple, clean and modern single-file subscription page based on the Aurora project.
+یک قالب ساده، سریع و مدرن برای نمایش اطلاعات اشتراک و کانفیگ‌ها در **Rebecca**.
 
-> Redesigned and simplified for **@GGCODER_IR**
-
-## ✨ Features
-
-- Single-file `index.html`
-- Clean modern UI
-- RTL Persian support
-- English / Persian language switch
-- Dark / Light mode
-- Subscription information
-- Used / remaining traffic
-- Expiration date
-- Configuration search
-- Protocol filters
-- Copy one or multiple configs
-- Export TXT / JSON
-- Subscription link copy/share
-- VPN files section
-- OpenVPN / WireGuard / L2TP / PPTP support
-- No external CDN
-- Works with Rebecca template variables
+طراحی شده و بازطراحی‌شده توسط **@GGCODER_IR**
 
 ---
 
-## 📦 Installation
+## ✨ قابلیت‌ها
 
-### Method 1 — GitHub
-
-1. Download or clone this repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Aurora-GGCODER_IR.git
-```
-
-2. Enter the folder:
-
-```bash
-cd Aurora-GGCODER_IR
-```
-
-3. Upload `index.html` to your web server.
-
-That's it. There is no build step and no `npm install`.
+- طراحی مدرن و سبک
+- پشتیبانی از زبان فارسی و انگلیسی
+- حالت تاریک و روشن
+- نمایش حجم مصرف‌شده
+- نمایش حجم باقی‌مانده
+- نمایش تاریخ انقضا
+- نمایش وضعیت اشتراک
+- جستجوی کانفیگ
+- فیلتر کانفیگ بر اساس پروتکل
+- کپی کانفیگ تکی
+- کپی کانفیگ‌های انتخاب‌شده
+- کپی همه کانفیگ‌ها
+- خروجی TXT
+- خروجی JSON
+- کپی لینک اشتراک
+- اشتراک‌گذاری لینک اشتراک
+- پشتیبانی از فایل‌های VPN
+- OpenVPN
+- WireGuard
+- L2TP
+- PPTP
+- بدون نیاز به npm
+- بدون نیاز به build
+- بدون CDN خارجی
+- کاملاً تک‌فایلی
 
 ---
 
-## 🚀 Use as a Rebecca Subscription Template
+# 🚀 نصب سریع
 
-This template is designed to work as a **single HTML subscription template**.
+برای نصب قالب، دستور زیر را اجرا کنید:
 
-### 1. Open the file
+```bash
+wget -O /var/lib/rebecca/templates/subscription/index.html \
+https://github.com/USERNAME/REPOSITORY/releases/latest/download/index.html
+```
 
-Open:
+> `USERNAME` و `REPOSITORY` را با نام GitHub خودت جایگزین کن.
+
+### مثال
+
+```bash
+wget -O /var/lib/rebecca/templates/subscription/index.html \
+https://github.com/ggcoder021/Aurora-GGCODER_IR/releases/latest/download/index.html
+```
+
+بعد از اجرای دستور، قالب به‌صورت خودکار در مسیر زیر نصب می‌شود:
 
 ```text
-index.html
+/var/lib/rebecca/templates/subscription/index.html
 ```
-
-### 2. Copy the entire content
-
-Copy all of the HTML code.
-
-### 3. Add it to your Rebecca template
-
-Create or edit your subscription template and paste the code.
-
-### 4. Save
-
-The page will automatically use the template variables for:
-
-- Username
-- Traffic usage
-- Data limit
-- Expiration
-- Subscription URL
-- Online users
-- Last online
-- VPN profiles
-
-> Do not remove the `aurora-data` section or the template variables inside it.
 
 ---
 
-## 🛠️ Customization
+# 🛠 نصب دستی
 
-### Change the brand name
+اگر نمی‌خواهید از `wget` استفاده کنید:
 
-Search for:
+1. فایل `index.html` را دانلود کنید.
+2. وارد سرور شوید.
+3. فایل را در مسیر زیر قرار دهید:
 
-```html
-Aurora
+```text
+/var/lib/rebecca/templates/subscription/index.html
 ```
 
-### Change the footer username
+اگر فایل قبلی وجود داشت، آن را جایگزین کنید.
 
-Search for:
+---
 
-```html
-@GGCODER_IR
+# 🔄 آپدیت قالب
+
+برای آپدیت به آخرین نسخه فقط دوباره دستور زیر را اجرا کنید:
+
+```bash
+wget -O /var/lib/rebecca/templates/subscription/index.html \
+https://github.com/USERNAME/REPOSITORY/releases/latest/download/index.html
 ```
 
-### Change colors
+---
 
-At the top of `index.html`, edit the CSS variables:
+# 🎨 تغییر ظاهر
+
+برای تغییر رنگ‌ها، فایل `index.html` را باز کنید.
+
+در قسمت `:root` این بخش را پیدا کنید:
 
 ```css
 :root{
@@ -114,20 +102,46 @@ At the top of `index.html`, edit the CSS variables:
 }
 ```
 
-### Change the title
+### تغییر رنگ اصلی
 
-Search for:
+```css
+--accent:#7c8cff;
+```
 
-```html
-<title>Aurora</title>
+### تغییر رنگ دوم
+
+```css
+--accent2:#50e3c2;
 ```
 
 ---
 
-## 📁 Project Structure
+# 🏷 تغییر نام Aurora
+
+داخل فایل `index.html` عبارت زیر را پیدا کنید:
 
 ```text
-Aurora-GGCODER_IR/
+Aurora
+```
+
+و آن را با نام دلخواه خودتان جایگزین کنید.
+
+---
+
+# 👤 تغییر سازنده
+
+برای تغییر نام سازنده، عبارت زیر را جستجو کنید:
+
+```text
+@GGCODER_IR
+```
+
+---
+
+# 📁 ساختار پروژه
+
+```text
+Aurora/
 ├── index.html
 ├── README.md
 ├── LICENSE
@@ -136,12 +150,32 @@ Aurora-GGCODER_IR/
 
 ---
 
-## 👤 Credits
+# ⚠️ نکته مهم
 
-Made and redesigned by **@GGCODER_IR**
+این قالب برای استفاده به‌عنوان **Subscription Template** طراحی شده است.
+
+برای عملکرد صحیح، بخش زیر را حذف نکنید:
+
+```html
+<div id="aurora-data">
+```
+
+متغیرهای Template مربوط به اطلاعات کاربر و اشتراک باید دست‌نخورده باقی بمانند.
 
 ---
 
-## ⚠️ Disclaimer
+# 👨‍💻 Credits
 
-This project is a frontend template. You are responsible for how and where you use it.
+ساخته و بازطراحی‌شده توسط:
+
+**@GGCODER_IR**
+
+---
+
+# 📄 License
+
+این پروژه تحت لایسنس MIT منتشر شده است.
+
+---
+
+> **نکته:** برای استفاده از مسیر `releases/latest/download/index.html` باید ابتدا یک Release با نسخه‌ای مثل `v1.0.0` بسازید و فایل `index.html` را به‌عنوان Release Asset آپلود کنید.
