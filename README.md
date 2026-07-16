@@ -42,16 +42,16 @@
 
 ```bash
 wget -O /var/lib/rebecca/templates/subscription/index.html \
-https://github.com/USERNAME/REPOSITORY/releases/latest/download/index.html
+https://github.com/ggcoder021/rebeca_ggcoder_sub/releases/latest/download/index.html
 ```
 
-> `USERNAME` و `REPOSITORY` را با نام GitHub خودت جایگزین کن.
+
 
 ### مثال
 
 ```bash
 wget -O /var/lib/rebecca/templates/subscription/index.html \
-https://github.com/ggcoder021/Aurora-GGCODER_IR/releases/latest/download/index.html
+https://github.com/ggcoder021/rebeca_ggcoder_sub/releases/latest/download/index.html
 ```
 
 بعد از اجرای دستور، قالب به‌صورت خودکار در مسیر زیر نصب می‌شود:
