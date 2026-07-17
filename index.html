@@ -9,14 +9,34 @@
 <style>
 :root{--bg:#080b12;--card:rgba(18,23,34,.78);--card2:rgba(25,31,45,.62);--line:rgba(255,255,255,.09);--text:#f4f7fb;--muted:#8993a5;--accent:#7c8cff;--accent2:#50e3c2;--danger:#ff6b8b;--shadow:0 22px 70px rgba(0,0,0,.35)}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:radial-gradient(900px 500px at 100% -10%,rgba(124,140,255,.16),transparent 60%),radial-gradient(700px 500px at 0% 50%,rgba(80,227,194,.08),transparent 60%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Tahoma,sans-serif;min-height:100vh}
-button,input{font:inherit}button{cursor:pointer;border:0;color:inherit}.wrap{max-width:920px;margin:auto;padding:20px 16px 60px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;position:sticky;top:0;z-index:5;padding:10px 0;background:linear-gradient(var(--bg) 60%,transparent);backdrop-filter:blur(8px)}.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#fff;font-size:23px;font-weight:900;box-shadow:0 10px 35px rgba(124,140,255,.3);animation:logoPulse 3s ease-in-out infinite}@keyframes logoPulse{0%,100%{transform:translateY(0) rotate(0);box-shadow:0 10px 35px rgba(124,140,255,.3)}50%{transform:translateY(-3px) rotate(2deg);box-shadow:0 16px 45px rgba(80,227,194,.24)}}.brand h1{font-size:20px;margin:0;font-weight:850}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}.actions{display:flex;gap:8px}.iconbtn,.btn{background:var(--card2);border:1px solid var(--line);border-radius:13px;padding:10px 13px;transition:.2s}.iconbtn:hover,.btn:hover{transform:translateY(-2px);border-color:rgba(124,140,255,.5);background:rgba(124,140,255,.12)}.hero{background:linear-gradient(135deg,rgba(124,140,255,.19),rgba(80,227,194,.08) 55%,var(--card));border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(124,140,255,.12);filter:blur(50px);left:-80px;top:-100px}.hero>*{position:relative;z-index:1}.hello{color:var(--muted);font-size:13px}.username{font-size:29px;font-weight:900;margin:4px 0 18px}.status{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;background:rgba(80,227,194,.1);color:var(--accent2);font-size:12px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 14px currentColor}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}.stat{background:rgba(0,0,0,.16);border:1px solid var(--line);border-radius:18px;padding:15px}.stat small{display:block;color:var(--muted);font-size:11px;margin-bottom:6px}.stat strong{font-size:18px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.card{background:linear-gradient(145deg,var(--card),rgba(10,14,22,.5));border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,.15);transition:.25s;position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.035),transparent 35%);pointer-events:none}.card:hover{transform:translateY(-2px);border-color:rgba(124,140,255,.25)}.card h2{font-size:15px;margin:0 0 14px;display:flex;justify-content:space-between;align-items:center}.subtle{color:var(--muted);font-size:12px}.search{width:100%;background:rgba(0,0,0,.18);border:1px solid var(--line);color:var(--text);border-radius:13px;padding:12px 14px;outline:none}.search:focus{border-color:var(--accent)}.filters{display:flex;gap:7px;flex-wrap:wrap;margin:11px 0}.chip{padding:7px 10px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:11px}.chip.active{background:rgba(124,140,255,.18);border-color:rgba(124,140,255,.55);color:#cfd4ff}.configs{display:flex;flex-direction:column;gap:8px;max-height:520px;overflow:auto}.config{display:flex;align-items:center;gap:9px;padding:11px;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.13)}.config input{accent-color:var(--accent)}.config-name{min-width:0;flex:1}.config-name strong{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.config-name small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.mini{padding:7px 9px;border-radius:9px;background:rgba(255,255,255,.06);font-size:11px}.empty{text-align:center;color:var(--muted);padding:26px 8px;font-size:12px}.bulk{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.vpn-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}.vpn-list{display:flex;flex-direction:column;gap:9px}.vpn{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(0,0,0,.13)}.vpn-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.vpn-title{font-weight:700;font-size:12px}.vpn-meta{color:var(--muted);font-size:10px;margin-top:4px}.vpn-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.wide{grid-column:1/-1}.footer{display:flex;justify-content:center;gap:8px;align-items:center;color:var(--muted);font-size:11px;margin-top:24px;padding:14px 18px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,rgba(124,140,255,.08),rgba(80,227,194,.04));box-shadow:0 12px 35px rgba(0,0,0,.16)}.footer a{transition:.2s}.footer a:hover{color:var(--accent2)!important;text-shadow:0 0 16px rgba(80,227,194,.5)}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;background:#1b2230;border:1px solid var(--line);padding:11px 15px;border-radius:13px;font-size:12px;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(10px);display:none;place-items:center;padding:16px;z-index:10}.modal.show{display:grid}.modalbox{max-width:560px;width:100%;max-height:85vh;overflow:auto;background:#101521;border:1px solid var(--line);border-radius:22px;padding:18px}.modalhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.secret{white-space:pre-wrap;word-break:break-word;background:#080b12;border:1px solid var(--line);border-radius:13px;padding:13px;font-size:11px;direction:ltr;text-align:left;max-height:50vh;overflow:auto}.light{--bg:#eef1f8;--card:rgba(255,255,255,.8);--card2:rgba(255,255,255,.65);--line:rgba(20,30,60,.1);--text:#182033;--muted:#6d7588}.light body{background:var(--bg)}@media(max-width:700px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.stats{gap:7px}.stat{padding:12px 9px}.stat strong{font-size:15px}.hero{padding:19px}.username{font-size:25px}}
+button,input{font:inherit}button{cursor:pointer;border:0;color:inherit}.wrap{max-width:920px;margin:auto;padding:20px 16px 60px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;position:sticky;top:0;z-index:5;padding:10px 0;background:linear-gradient(var(--bg) 60%,transparent);backdrop-filter:blur(8px)}.brand{display:flex;align-items:center;gap:12px}.logo{width:46px;height:46px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#fff;font-size:23px;font-weight:900;box-shadow:0 10px 35px rgba(124,140,255,.3);animation:logoPulse 3s ease-in-out infinite}@keyframes logoPulse{0%,100%{transform:translateY(0) rotate(0);box-shadow:0 10px 35px rgba(124,140,255,.3)}50%{transform:translateY(-3px) rotate(2deg);box-shadow:0 16px 45px rgba(80,227,194,.24)}}.brand h1{font-size:20px;margin:0;font-weight:850}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}.actions{display:flex;gap:8px;align-items:center}.iconbtn,.btn{background:var(--card2);border:1px solid var(--line);border-radius:13px;padding:10px 13px;transition:.2s}.iconbtn:hover,.btn:hover{transform:translateY(-2px);border-color:rgba(124,140,255,.5);background:rgba(124,140,255,.12)}.hero{background:linear-gradient(135deg,rgba(124,140,255,.19),rgba(80,227,194,.08) 55%,var(--card));border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(124,140,255,.12);filter:blur(50px);left:-80px;top:-100px}.hero>*{position:relative;z-index:1}.hello{color:var(--muted);font-size:13px}.username{font-size:29px;font-weight:900;margin:4px 0 18px}.status{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;background:rgba(80,227,194,.1);color:var(--accent2);font-size:12px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 14px currentColor}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}.stat{background:rgba(0,0,0,.16);border:1px solid var(--line);border-radius:18px;padding:15px}.stat small{display:block;color:var(--muted);font-size:11px;margin-bottom:6px}.stat strong{font-size:18px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.card{background:linear-gradient(145deg,var(--card),rgba(10,14,22,.5));border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,.15);transition:.25s;position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.035),transparent 35%);pointer-events:none}.card:hover{transform:translateY(-2px);border-color:rgba(124,140,255,.25)}.card h2{font-size:15px;margin:0 0 14px;display:flex;justify-content:space-between;align-items:center}.subtle{color:var(--muted);font-size:12px}.search{width:100%;background:rgba(0,0,0,.18);border:1px solid var(--line);color:var(--text);border-radius:13px;padding:12px 14px;outline:none}.search:focus{border-color:var(--accent)}.filters{display:flex;gap:7px;flex-wrap:wrap;margin:11px 0}.chip{padding:7px 10px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:11px}.chip.active{background:rgba(124,140,255,.18);border-color:rgba(124,140,255,.55);color:#cfd4ff}.configs{display:flex;flex-direction:column;gap:8px;max-height:520px;overflow:auto}.config{display:flex;align-items:center;gap:9px;padding:11px;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.13)}.config input{accent-color:var(--accent)}.config-name{min-width:0;flex:1}.config-name strong{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.config-name small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.mini{padding:7px 9px;border-radius:9px;background:rgba(255,255,255,.06);font-size:11px}.empty{text-align:center;color:var(--muted);padding:26px 8px;font-size:12px}.bulk{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.vpn-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}.vpn-list{display:flex;flex-direction:column;gap:9px}.vpn{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(0,0,0,.13)}.vpn-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.vpn-title{font-weight:700;font-size:12px}.vpn-meta{color:var(--muted);font-size:10px;margin-top:4px}.vpn-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.wide{grid-column:1/-1}.footer{display:flex;justify-content:center;gap:8px;align-items:center;color:var(--muted);font-size:11px;margin-top:24px;padding:14px 18px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,rgba(124,140,255,.08),rgba(80,227,194,.04));box-shadow:0 12px 35px rgba(0,0,0,.16)}.footer a{transition:.2s}.footer a:hover{color:var(--accent2)!important;text-shadow:0 0 16px rgba(80,227,194,.5)}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;background:#1b2230;border:1px solid var(--line);padding:11px 15px;border-radius:13px;font-size:12px;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(10px);display:none;place-items:center;padding:16px;z-index:10}.modal.show{display:grid}.modalbox{max-width:560px;width:100%;max-height:85vh;overflow:auto;background:#101521;border:1px solid var(--line);border-radius:22px;padding:18px}.modalhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.secret{white-space:pre-wrap;word-break:break-word;background:#080b12;border:1px solid var(--line);border-radius:13px;padding:13px;font-size:11px;direction:ltr;text-align:left;max-height:50vh;overflow:auto}.light{--bg:#eef1f8;--card:rgba(255,255,255,.8);--card2:rgba(255,255,255,.65);--line:rgba(20,30,60,.1);--text:#182033;--muted:#6d7588}.light body{background:var(--bg)}@media(max-width:700px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.stats{gap:7px}.stat{padding:12px 9px}.stat strong{font-size:15px}.hero{padding:19px}.username{font-size:25px}}
+
+.dropdown{position:relative;display:block;width:100%}
+.dropdown-menu{position:relative;margin-top:10px;min-width:100%;padding:8px;border-radius:14px;border:1px solid var(--line);background:linear-gradient(180deg,var(--card),var(--card2));box-shadow:var(--shadow);display:none;z-index:2;backdrop-filter:blur(10px)}
+.dropdown.open .dropdown-menu{display:block;animation:ddIn .2s ease}
+.dropdown-menu a{display:block;padding:11px 13px;margin:5px 0;border-radius:10px;text-decoration:none;color:var(--text);font-weight:700;font-size:13px;transition:.2s;border:1px solid transparent}
+.dropdown-menu a:hover{background:rgba(124,140,255,.12);border-color:rgba(124,140,255,.35);transform:translateY(-1px)}
+@keyframes ddIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
+.collapse-head{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;background:linear-gradient(135deg,rgba(124,140,255,.16),rgba(80,227,194,.09));border:1px solid rgba(124,140,255,.35);border-radius:14px;padding:12px 14px;font-weight:850}
+.collapse-head .arrow{transition:.2s}
+.collapse.open .collapse-head .arrow{transform:rotate(180deg)}
+.collapse-body{display:none;margin-top:12px}
+.collapse.open .collapse-body{display:block;animation:ddIn .2s ease}
+
+.apps-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:linear-gradient(135deg,rgba(124,140,255,.20),rgba(80,227,194,.12));border:1px solid rgba(124,140,255,.35);border-radius:14px;padding:12px 14px;font-weight:850}
+.apps-btn .arrow{transition:.2s}
+.dropdown.open .apps-btn .arrow{transform:rotate(180deg)}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
   <div class="brand"><div class="logo">A</div><div><h1 id="brand">Aurora</h1><p id="service">Subscription</p></div></div>
-  <div class="actions"><button class="iconbtn" id="langBtn">EN</button><button class="iconbtn" id="themeBtn">☼</button></div>
+  <div class="actions">
+    <button class="iconbtn" id="langBtn">EN</button>
+    <button class="iconbtn" id="themeBtn">☼</button>
+  </div>
 </header>
 
 <section class="hero">
@@ -45,11 +65,34 @@ button,input{font:inherit}button{cursor:pointer;border:0;color:inherit}.wrap{max
 </section>
 
 <section class="card wide">
-  <h2><span data-fa="کانفیگ‌ها" data-en="Configurations">کانفیگ‌ها</span><span class="subtle" id="configCount">0</span></h2>
-  <input class="search" id="search" placeholder="جستجوی کانفیگ...">
-  <div class="filters" id="filters"></div>
-  <div class="configs" id="configs"></div>
-  <div class="bulk"><button class="btn" id="copySelected">کپی انتخاب‌شده</button><button class="btn" id="copyAll">کپی همه</button><button class="btn" id="txtExport">TXT</button><button class="btn" id="jsonExport">JSON</button></div>
+  <div class="collapse" id="servicesCollapse">
+    <button class="collapse-head" id="servicesToggle">
+      <span>سرویس‌ها</span>
+      <span class="arrow">▾</span>
+    </button>
+
+    <div class="collapse-body">
+      <h2 style="margin-top:0"><span data-fa="کانفیگ‌ها" data-en="Configurations">کانفیگ‌ها</span><span class="subtle" id="configCount">0</span></h2>
+      <input class="search" id="search" placeholder="جستجوی کانفیگ...">
+      <div class="filters" id="filters"></div>
+      <div class="configs" id="configs"></div>
+      <div class="bulk"><button class="btn" id="copySelected">کپی انتخاب‌شده</button><button class="btn" id="copyAll">کپی همه</button><button class="btn" id="txtExport">TXT</button><button class="btn" id="jsonExport">JSON</button></div>
+    </div>
+  </div>
+
+  <div style="height:10px"></div>
+
+  <div class="dropdown" id="appsDropdown">
+    <button class="apps-btn" id="appsBtn">
+      <span>برنامه‌ها</span>
+      <span class="arrow">▾</span>
+    </button>
+    <div class="dropdown-menu" id="appsMenu">
+      <a href="https://github.com/2dust/v2rayNG/releases/download/2.2.6/v2rayNG_2.2.6-fdroid_arm64-v8a.apk" target="_blank" rel="noopener">اندروید</a>
+      <a href="https://apps.apple.com/us/app/sing-box-vt/id6673731168" target="_blank" rel="noopener">آیفون</a>
+      <a href="https://github.com/hiddify/hiddify-next/releases/latest/download/Hiddify-Windows-Setup-x64.exe" target="_blank" rel="noopener">ویندوز</a>
+    </div>
+  </div>
 </section>
 
 <section class="card wide" id="vpnCard" hidden>
@@ -57,6 +100,129 @@ button,input{font:inherit}button{cursor:pointer;border:0;color:inherit}.wrap{max
   <div class="vpn-tabs" id="vpnTabs"></div>
   <div class="vpn-list" id="vpnList"></div>
 </section>
+</div>
+<div class="footer"><span>✦</span><span id="footerBrand">Aurora</span><span>•</span><span data-fa="ساده، سریع، خفن" data-en="Simple. Fast. Clean.">ساده، سریع، خفن</span><span>•</span><a href="https://t.me/GGCODER_IR" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;font-weight:800">@GGCODER_IR</a></div>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal"><div class="modalbox"><div class="modalhead"><strong id="modalTitle">Details</strong><button class="iconbtn" id="closeModal">×</button></div><pre class="secret" id="modalBody"></pre><div class="bulk"><button class="btn" id="modalCopy">کپی</button><button class="btn" id="modalDownload">دانلود</button></div></div></div>
+
+<!-- Rebecca data island -->
+<div id="aurora-data" hidden
+ data-username="{{ user.username }}"
+ data-status="{{ user.status }}"
+ data-status-class="{{ user.status_class }}"
+ data-used="{{ user.used_traffic }}"
+ data-limit="{{ user.data_limit }}"
+ data-reset-strategy="{{ user.data_limit_reset_strategy }}"
+ data-expire="{{ user.expire }}"
+ data-remaining-days="{{ remaining_days }}"
+ data-subscription-url="{{ user.subscription_url }}"
+ data-usage-url="{{ usage_url }}"
+ data-support-url="{{ support_url }}"
+ data-brand-name="{{ brand_name }}"
+ data-profile-title="{{ subscription_profile_title }}"
+ data-online-count="{{ user.online_count }}"
+ data-online-at="{{ user.online_at }}"
+ data-created-at="{{ user.created_at }}"
+ data-service-name="{{ user.service_name }}">
+</div>
+
+<!-- Subscription links: keep this loop direct and separate from the data island -->
+<div id="aurora-links" hidden>
+  <div id="aurora-user-links">
+  {% for link in user.links %}
+  <span class="aurora-link">{{ link }}</span>
+  {% endfor %}
+  </div>
+  <div id="aurora-legacy-links">
+  {% for link in links %}
+  <span class="aurora-link">{{ link }}</span>
+  {% endfor %}
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+const data=document.getElementById("aurora-data");
+const state={lang:localStorage.getItem("aurora_lang")||"fa",theme:localStorage.getItem("aurora_theme")||"dark",filter:"all",search:"",configs:[],vpn:{},modal:null};
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const safe=v=>String(v??"").trim();
+const n=v=>{const x=Number(v);return Number.isFinite(x)?x:0};
+const fmtBytes=b=>{b=n(b);if(!b)return "0 B";const u=["B","KB","MB","GB","TB"];let i=0;while(b>=1024&&i<u.length-1){b/=1024;i++}return `${b.toFixed(b>=10||i===0?0:1)} ${u[i]}`};
+const date=v=>{if(!n(v))return "—";try{return new Intl.DateTimeFormat(state.lang==="fa"?"fa-IR":"en-US",{dateStyle:"medium"}).format(new Date(n(v)*1000))}catch{return "—"}};
+const txt=(fa,en)=>state.lang==="fa"?fa:en;
+const toast=m=>{const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove("show"),2200)};
+const copy=async x=>{try{await navigator.clipboard.writeText(x);toast(txt("کپی شد","Copied"))}catch{toast(txt("کپی ناموفق بود","Copy failed"))}};
+const download=(name,content,type="text/plain")=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)};
+const protocol=x=>{const m=String(x).trim().match(/^([a-z0-9+.-]+):/i);return m?m[1].toLowerCase():"other"};
+const label=x=>({vless:"VLESS",vmess:"VMess",trojan:"Trojan",ss:"Shadowsocks",socks:"SOCKS",http:"HTTP",wireguard:"WireGuard",openvpn:"OpenVPN"}[x]||x.toUpperCase());
+function apply(){
+ document.documentElement.lang=state.lang;document.documentElement.dir=state.lang==="fa"?"rtl":"ltr";
+ document.documentElement.classList.toggle("light",state.theme==="light");
+ $("#langBtn").textContent=state.lang==="fa"?"EN":"FA";
+ $$("[data-fa]").forEach(e=>e.textContent=e.dataset[state.lang]);
+}
+function init(){
+ const brand=safe(data.dataset.profileTitle)||safe(data.dataset.brandName)||"Aurora";
+ $("#brand").textContent=brand;$("#footerBrand").textContent=brand;document.title=brand;
+ $("#service").textContent=safe(data.dataset.serviceName)||"Subscription";
+ $("#username").textContent=safe(data.dataset.username)||"—";
+ $("#status").textContent=txt(safe(data.dataset.status)||"Active",safe(data.dataset.status)||"Active");
+ const used=n(data.dataset.used),limit=n(data.dataset.limit);
+ $("#used").textContent=fmtBytes(used);
+ $("#remaining").textContent=limit?fmtBytes(Math.max(0,limit-used)):txt("نامحدود","Unlimited");
+ $("#expire").textContent=n(data.dataset.expire)?date(data.dataset.expire):txt("بدون انقضا","Never");
+ $("#reset").textContent=safe(data.dataset.resetStrategy)||"—";
+ $("#online").textContent=`${n(data.dataset.onlineCount)} online`;
+ $("#lastOnline").textContent=date(data.dataset.onlineAt);
+ const seen=new Set();
+ state.configs=[...document.querySelectorAll("#aurora-links .aurora-link")]
+  .map(e=>e.textContent.trim())
+  .filter(Boolean)
+  .filter(x=>!seen.has(x)&&seen.add(x));
+ renderFilters();renderConfigs();apply();loadVPN();
+}
+function renderFilters(){
+ const types=["all",...new Set(state.configs.map(protocol))];
+ $("#filters").innerHTML=types.map(t=>`<button class="chip ${state.filter===t?"active":""}" data-filter="${t}">${t==="all"?txt("همه","All"):label(t)}</button>`).join("");
+ $$("#filters .chip").forEach(b=>b.onclick=()=>{state.filter=b.dataset.filter;renderFilters();renderConfigs()});
+}
+function renderConfigs(){
+ const q=state.search.toLowerCase();
+ const arr=state.configs.map((url,i)=>({url,i,p:protocol(url),name:configName(url,i)})).filter(x=>(state.filter==="all"||x.p===state.filter)&&(!q||x.url.toLowerCase().includes(q)||x.name.toLowerCase().includes(q)));
+ $("#configCount").textContent=state.configs.length;
+ $("#configs").innerHTML=arr.length?arr.map(x=>`<label class="config"><input type="checkbox" data-i="${x.i}"><div class="config-name"><strong>${escapeHtml(x.name)}</strong><small>${label(x.p)} · ${escapeHtml(x.url)}</small></div><button type="button" class="mini" data-copy="${x.i}">${txt("کپی","Copy")}</button><button type="button" class="mini" data-view="${x.i}">⌁</button></label>`).join(""):`<div class="empty">${txt("کانفیگی وجود ندارد","No configurations found")}</div>`;
+ $$("[data-copy]").forEach(b=>b.onclick=e=>{e.preventDefault();copy(state.configs[n(b.dataset.copy)])});
+ $$("[data-view]").forEach(b=>b.onclick=e=>{e.preventDefault();openModal("Config",state.configs[n(b.dataset.view)])});
+}
+function configName(url,i){
+ try{
+   const raw=String(url).trim();
+   const hash=raw.indexOf("#");
+   if(hash>=0){
+     const name=decodeURIComponent(raw.slice(hash+1)).trim();
+     if(name)return name;
+   }
+   const m=raw.match(/[?&](?:name|remark|remarks|tag)=([^&#]+)/i);
+   if(m){
+     const name=decodeURIComponent(m[1]).trim();
+     if(name)return name;
+   }
+ }catch{}
+ return `${label(protocol(url))} #${i+1}`;
+}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+async function loadVPN(){
+ const sub=safe(data.dataset.subscriptionUrl);if(!sub)return;
+ try{const r=await fetch(sub.replace(/\/$/,"")+"/info",{credentials:"same-origin"});if(!r.ok)return;const j=await r.json();state.vpn=j;renderVPN()}catch{}
+}
+function renderVPN(){
+ const groups=[];
+ const ov=state.vpn.openvpn||state.vpn.ov;
+ if(ov?.profiles?.length)groups.push(["openvpn",ov.profiles]);
+ if(state.vpn.wi>
 </div>
 <div class="footer"><span>✦</span><span id="footerBrand">Aurora</span><span>•</span><span data-fa="ساده، سریع، خفن" data-en="Simple. Fast. Clean.">ساده، سریع، خفن</span><span>•</span><a href="https://t.me/GGCODER_IR" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;font-weight:800">@GGCODER_IR</a></div>
 </div>
