@@ -48,10 +48,10 @@ https://github.com/ggcoder021/rebeca_ggcoder_sub/releases/latest/download/index.
 
 
 
-### مثال
+### نصب برای مرزبان 
 
 ```bash
-wget -O /var/lib/rebecca/templates/subscription/index.html \
+wget -O /var/lib/marzban/templates/subscription/index.html \
 https://github.com/ggcoder021/rebeca_ggcoder_sub/releases/latest/download/index.html
 ```
 
